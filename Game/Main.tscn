@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/enemies/Slime.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/Hud/hud.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/audio/hindrance-124376.mp3" type="AudioStream" id=8]
-[ext_resource path="res://assets/enemies/Enemies_spawner.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/enemy/Enemies_spawner.tscn" type="PackedScene" id=14]
 
 [sub_resource type="TileSet" id=1]
 0/name = "RPG tileset (full) v1.5.png 0"
@@ -48,9 +48,6 @@ tile_data = PoolIntArray( -2555924, 0, 0, -2555923, 0, 1, -2555922, 0, 1, -25559
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 325, 190 )
-
-[node name="AnimatedSprite" parent="Player" index="1"]
-frame = 3
 
 [node name="detectEnemies" parent="Player" index="4"]
 visible = true

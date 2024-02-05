@@ -28,7 +28,7 @@ signal level(value);
 signal hp(value);
 
 # Player stats
-var attack_speed = Save.gameData.player.attack * 0.1 + 1;
+var attack_speed = Save.gameData.player.attack * 0.1 + 2;
 var armor = Save.gameData.player.armor * 2;
 var health = 40 + Save.gameData.player.health * 10;
 var xp = 0;

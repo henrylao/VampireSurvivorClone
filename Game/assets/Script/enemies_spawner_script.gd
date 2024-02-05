@@ -1,18 +1,20 @@
 extends Node
 
-const MAX_ENEMIES: int = 4
+const MAX_ENEMIES: int = 50
 
 onready var _spawners_location: Array = []
-const _enemy_array: Array = [preload("res://assets/enemies/beast.tscn"),
-	preload("res://assets/enemies/beholder.tscn"),
-	preload("res://assets/enemies/bulette.tscn"),
-	preload("res://assets/enemies/Dragon.tscn"),
-	preload("res://assets/enemies/golem.tscn"),
-	preload("res://assets/enemies/Slime.tscn")];
+const _enemy_array: Array = [preload("res://assets/enemy/Beast/beast.tscn"),
+	preload("res://assets/enemy/Beholder/beholder.tscn"),
+	preload("res://assets/enemy/Bulette/bulette.tscn"),
+	preload("res://assets/enemy/Dragon/Dragon.tscn"),
+	preload("res://assets/enemy/Golem/golem.tscn"),
+	preload("res://assets/enemy/Slime/Slime.tscn")];
 
 onready var main_scene = get_tree().get_root();
 onready var spawn_timer = get_node("Timers/spawn_timer");
 onready var frequency_timer = get_node("Timers/frequency_timer");
+
+#print("Loading from `enemies`");
 
 func _ready():
 	for child in self.get_children():

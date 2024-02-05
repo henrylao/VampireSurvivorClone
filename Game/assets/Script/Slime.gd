@@ -39,10 +39,12 @@ func death():
 	xp.xp = experience;
 	xp.global_position = global_position;
 	get_tree().get_root().add_child(xp);
+	
 	var rng = RandomNumberGenerator.new()
 	rng.randomize();
 	if rng.randi_range(0, 5) == 5:
 		var coin = coin_scene.instance();
 		coin.global_position = global_position;
+		
 		coin.global_position.y += 15;
 		get_tree().get_root().add_child(coin);
