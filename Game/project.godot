@@ -11,13 +11,13 @@ config_version=4
 [application]
 
 config/name="Napoleon"
-run/main_scene="res://Menu/Menu.tscn"
+run/main_scene="res://assets/Menu/Menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-GlobalSettings="*res://Script/globalSettings.gd"
-Save="*res://Script/save.gd"
+GlobalSettings="*res://assets/Script/globalSettings.gd"
+Save="*res://assets/Script/save.gd"
 
 [input]
 
@@ -78,6 +78,10 @@ ui_change_tab={
 2d_physics/layer_2="player"
 2d_physics/layer_3="enemy"
 2d_physics/layer_4="loot"
+
+[mono]
+
+project/assembly_name="Napoleon"
 
 [physics]
 
