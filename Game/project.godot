@@ -14,6 +14,10 @@ config/name="Napoleon"
 run/main_scene="res://assets/Menu/Menu.tscn"
 config/icon="res://icon.png"
 
+[audio]
+
+default_bus_layout="res://assets/audio/default_bus_layout.tres"
+
 [autoload]
 
 GlobalSettings="*res://assets/Script/globalSettings.gd"
