@@ -160,6 +160,8 @@ radius = 4075.47
 
 [node name="Player" type="KinematicBody2D" groups=["player"]]
 script = ExtResource( 3 )
+speed = null
+velocity = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -209,7 +211,7 @@ unique_name_in_owner = true
 
 [node name="spearAttackTimer" type="Timer" parent="attack/spearTimer"]
 unique_name_in_owner = true
-wait_time = 0.075
+wait_time = 0.08
 
 [node name="axeTimer" type="Timer" parent="attack"]
 unique_name_in_owner = true
